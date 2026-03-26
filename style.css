@@ -1107,6 +1107,7 @@ textarea {
 /* Contact Form */
 .contact__form {
   padding: 40px 36px;
+  scroll-margin-top: 100px;
 }
 
 .contact__form-title {
@@ -1267,8 +1268,10 @@ textarea {
     grid-template-columns: 1fr 1fr;
   }
 
+  .services .solutions__grid,
   .solutions__grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    gap: 32px;
   }
 
   .projects-grid {
@@ -1385,6 +1388,7 @@ textarea {
     gap: 30px;
   }
 
+  .services .solutions__grid,
   .solutions__grid {
     grid-template-columns: 1fr;
     gap: 28px;

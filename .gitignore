@@ -1,0 +1,20 @@
+# Git Ignore
+
+# System-generated files
+.gemini/
+brain/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python files
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Other
+node_modules/
+dist/
+build/

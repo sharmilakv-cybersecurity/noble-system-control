@@ -22,6 +22,13 @@ document.addEventListener('DOMContentLoaded', () => {
   hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     mainNav.classList.toggle('open');
+    
+    // Reset focused state if closing
+    if (!mainNav.classList.contains('open')) {
+      mainNav.classList.remove('navbar__nav--focused-services');
+      dropdownParent.classList.remove('open');
+    }
+    
     document.body.style.overflow = mainNav.classList.contains('open') ? 'hidden' : '';
   });
 
@@ -72,13 +79,20 @@ document.addEventListener('DOMContentLoaded', () => {
   dropdownToggle.addEventListener('click', (e) => {
     e.preventDefault();
     e.stopPropagation();
+    const isOpening = !dropdownParent.classList.contains('open');
     dropdownParent.classList.toggle('open');
+
+    // Focused view for mobile
+    if (window.innerWidth <= 768) {
+      mainNav.classList.toggle('navbar__nav--focused-services', isOpening);
+    }
   });
 
   // Close dropdown when clicking anywhere outside
   document.addEventListener('click', (e) => {
     if (!dropdownParent.contains(e.target)) {
       dropdownParent.classList.remove('open');
+      mainNav.classList.remove('navbar__nav--focused-services');
     }
   });
 

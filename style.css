@@ -1373,6 +1373,34 @@ textarea {
     border: none;
   }
 
+  .navbar__nav--focused-services .navbar__links > li:not(.navbar__dropdown) {
+    display: none;
+  }
+
+  .navbar__nav--focused-services .navbar__links {
+    width: 100%;
+  }
+
+  .navbar__nav--focused-services .navbar__dropdown {
+    width: 100%;
+  }
+
+  .navbar__nav--focused-services .dropdown-toggle {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--clr-primary);
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  .navbar__nav--focused-services .dropdown-menu {
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+    padding-bottom: 40px;
+  }
+
   .navbar__dropdown.open .dropdown-menu {
     max-height: 500px;
     padding: 8px 0;

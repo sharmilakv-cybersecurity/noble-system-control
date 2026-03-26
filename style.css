@@ -1015,11 +1015,6 @@ textarea {
   color: var(--clr-primary);
 }
 
-.project-card--amc {
-  background: rgba(26, 107, 255, 0.06);
-  border-color: rgba(26, 107, 255, 0.18);
-}
-
 /* ============================================
    CONTACT
    ============================================ */

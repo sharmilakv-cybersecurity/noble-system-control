@@ -1327,16 +1327,19 @@ textarea {
   }
 
   .navbar__logo-text {
-    font-size: 0.95rem;
-    max-width: 140px;
+    font-size: 0.85rem;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  }
+
+  .navbar__iso-badge {
+    height: 28px;
+    margin-left: 4px;
+    margin-right: 4px;
   }
 
   .navbar__hamburger {
     display: flex;
-    margin-left: 8px;
+    margin-left: 4px;
     flex-shrink: 0;
   }
 
@@ -1436,7 +1439,22 @@ textarea {
 
 @media (max-width: 480px) {
   .hero__title {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+  }
+
+  .hero__subtitle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    font-size: 0.88rem;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
+
+  .hero__subtitle span {
+    white-space: nowrap;
   }
 
   .hero__buttons {
@@ -1447,13 +1465,13 @@ textarea {
 
   .hero__buttons .btn {
     width: 100%;
-    max-width: 300px;
-    padding: 12px 24px;
-    font-size: 0.95rem;
+    max-width: 240px;
+    padding: 10px 20px;
+    font-size: 0.9rem;
   }
 
   .btn--lg {
-    padding: 12px 24px;
+    padding: 10px 20px;
   }
 
   .stat-item__number {

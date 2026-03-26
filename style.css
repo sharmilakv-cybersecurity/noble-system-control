@@ -1359,18 +1359,23 @@ textarea {
 
   /* Dropdown mobile */
   .dropdown-menu {
-    position: static;
-    transform: none;
-    min-width: 100%;
+    position: static !important;
+    transform: none !important;
+    width: 100% !important;
+    min-width: 100% !important;
     opacity: 1;
     visibility: visible;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.35s ease;
-    padding: 0;
-    background: transparent;
-    backdrop-filter: none;
-    border: none;
+    padding: 0 !important;
+    background: transparent !important;
+    backdrop-filter: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    left: 0 !important;
+    margin: 0 !important;
   }
 
   .navbar__nav--focused-services .navbar__links > li:not(.navbar__dropdown) {
@@ -1407,7 +1412,9 @@ textarea {
   }
 
   .dropdown-menu li a {
-    padding: 8px 16px;
+    padding: 12px 20px;
+    width: 100%;
+    display: block;
   }
 
   .stats__inner {
